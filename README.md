@@ -17,7 +17,7 @@ Here're some of the project's best features:
 <p>1. Clone the repository:</p>
 
 ```
-git clone https://github.com/your-username/instamessage.git
+git clone https://github.com/your-username/SnapTalk.git
 ```
 
 <p>2. Navigate to the client directory:</p>
@@ -62,7 +62,7 @@ npm install ws
 npm run dev
 ```
 
-<p>9. Open your web browser and visit http://localhost:3000 to access InstaMessage.</p>
+<p>9. Open your web browser and visit http://localhost:3000 to access SnapTalk</p>
 
 <h2>🍰 Contribution Guidelines:</h2>
 
