@@ -66,7 +66,7 @@ npm run dev
 
 <h2>🍰 Contribution Guidelines:</h2>
 
-Contributions to InstaMessage are welcome! If you have any suggestions or would like to report issues please contact the project owner at charlottegreenaway654@gmail.com.
+Contributions to SnapTalk are welcome! If you have any suggestions or would like to report issues please contact the project owner at charlottegreenaway654@gmail.com.
 
 <h2>&#128295; Known Issues</h2>
   * This app is a work in progress - the settings page is yet to be updated and the front end of the actual message box is to be designed.
