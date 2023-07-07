@@ -1,0 +1,32 @@
+#messageHome{
+    display:flex;
+}
+
+#friendspage{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#currFriendsSect{
+    width: auto;
+}
+#friendsheader{
+    background-color: #bbd0ff;
+    padding:2%;
+    border-right:1px solid rgb(165, 165, 165);
+}
+#currFriendsSect, #findFriends, #friendRequests {
+    text-align: center;
+    background-color: #fdf4fd;
+    border-right:1px solid rgb(165, 165, 165);
+    overflow: auto;
+    height: 90dvh;
+}
+
+#addFriend{
+    border-radius: 20px;
+    border: 1px solid #fdb2fd;
+    background-color: #fcc7fc;
+    padding:4%;
+    margin: 4% 0;
+}

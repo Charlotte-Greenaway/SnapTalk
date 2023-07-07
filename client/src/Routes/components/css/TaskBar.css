@@ -1,0 +1,149 @@
+/* CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+#taskbar li{
+    list-style: none;
+    display: inline-flex;
+    padding-right:3dvw;
+    font-size: larger;
+}
+#taskbar button:hover{
+  color: rgb(245, 132, 245);
+}
+#taskbar  .active{
+    text-decoration: underline;
+}
+#taskbar{
+  width: 100dvw;
+  height: 10dvh;
+  background-color: #ffd6ff;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  transition: all 1s ease;
+}
+
+#sidebar{
+    background-color: #fdf4fd;
+    width:20dvw;
+    height:90dvh;
+    text-align: center;
+}
+#sidebarheader{
+  background-color: #bbd0ff;
+  top: 0;
+  padding:2%;
+  border-right:1px solid rgb(165, 165, 165);
+  
+}
+#taskbar button{
+    border: none;
+    background-color: transparent;
+    display: inline-flex;
+    padding-right:3dvw;
+    font-size: larger;
+}
+
+::-webkit-scrollbar {
+    width: 8px; /* Width of the entire scrollbar */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar handle */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color on hover */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+  }
+.chatHead{
+  border: 1px solid black;
+  padding:4%;
+}
+#addConvo{
+  border-radius: 5px;
+  border: none;
+  margin:3% 5%;
+  padding:2dvh;
+  background-color: #ffd6ff;
+  transition: background-color 0.5s ease;
+}
+#addConvo:hover{
+  background-color:#bca7fd;
+  transition: background-color 0.5s ease;
+}
+#sidebarheader h2{
+  display: inline-flex;
+  margin-right:10%;
+}
+#noneAddConvo{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
