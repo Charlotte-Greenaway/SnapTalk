@@ -68,7 +68,10 @@ npm run dev
 
 Contributions to InstaMessage are welcome! If you have any suggestions or would like to report issues please contact the project owner at charlottegreenaway654@gmail.com.
 
-  
+<h2>&#128295; Known Issues</h2>
+  * This app is a work in progress - the settings page is yet to be updated and the front end of the actual message box is to be designed.
+  * This is not yet responsive to mobile/tablet
+These issues will be improved upon so please watch my project for any updates
   
 <h2>💻 Built with</h2>
 
