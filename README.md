@@ -1,4 +1,4 @@
-<h1 align="center" id="title">InstaMessage</h1>
+<h1 align="center" id="title">SnapTalk</h1>
 
 <p id="description">InstaMessage is an instant messaging service built using React and Node.js. It allows users to send and receive messages in real-time.</p>
 
