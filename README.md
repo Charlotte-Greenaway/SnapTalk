@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+<h1 align="center" id="title">SnapTalk</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p id="description">SnapTalk is an instant messaging service built using React and Node.js. It allows users to send and receive messages in real-time.</p>
 
-## Available Scripts
+  
+  
+<h2>🧐 Features</h2>
 
-In the project directory, you can run:
+Here're some of the project's best features:
 
-### `npm start`
+*   Real-time messaging: Users can send and receive messages instantly.
+*   User-friendly interface: The interface is designed to be intuitive and easy to use.
+*   Secure communication: Messages are encrypted to ensure privacy and security.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h2>🛠️ Installation Steps:</h2>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p>1. Clone the repository:</p>
 
-### `npm test`
+```
+git clone https://github.com/your-username/SnapTalk.git
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p>2. Navigate to the client directory:</p>
 
-### `npm run build`
+```
+cd instamessage/client
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p>3. Install the dependencies:</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p>4. Start the React development server:</p>
 
-### `npm run eject`
+```
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p>5. Open another terminal and navigate to the server directory:</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+cd ../server
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p>6. Install the server dependencies:</p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+npm install
+```
 
-## Learn More
+<p>7. Install Websocket:</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+npm install ws    
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p>8. Start the Node.js server:</p>
 
-### Code Splitting
+```
+npm run dev
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<p>9. Open your web browser and visit http://localhost:3000 to access SnapTalk</p>
 
-### Analyzing the Bundle Size
+<h2>🍰 Contribution Guidelines:</h2>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions to SnapTalk are welcome! If you have any suggestions or would like to report issues please contact the project owner at charlottegreenaway654@gmail.com.
 
-### Making a Progressive Web App
+<h2>&#128295; Known Issues</h2>
+  * This app is a work in progress - the settings page is yet to be updated and the front end of the actual message box is to be designed.
+  * This is not yet responsive to mobile/tablet
+These issues will be improved upon so please watch my project for any updates
+  
+<h2>💻 Built with</h2>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Technologies used in the project:
 
-### Advanced Configuration
+*   Node.js
+*   React.js
+*   MongoDB
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<h2>💖Like my work?</h2>
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Please feel free to contact me on charlottegreenaway654@gmail.com or visit my portfolio website at www.charlotte-greenaway.com.
+  
