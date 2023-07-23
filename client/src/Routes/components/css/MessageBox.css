@@ -2,6 +2,8 @@
     flex-grow: 0.5;
     overflow-y: hidden;
     margin-left:3%;
+    height: fit-content;
+    width: 60dvw;
 }
 #messageBox h3{
     text-align: center;
@@ -9,8 +11,30 @@
     background-color: #fdf4fd;
 }
 #messages{
-    height:35%;
-    width:75%;
+    height: 60dvh;
+    width: 99%;
     border:3px solid #fdf4fd;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+    word-break: keep-all
+}
+.userfrom, .userto {
+    width: 60dvw; /* Custom unit (60% of dynamic viewport width) */
+    padding: 0.5% 2%;
+    border-radius: 25px;
+    margin: 1%;
+    overflow-wrap: break-word;
+    word-break: keep-all;
+}
+
+.userfrom {
+    background-color: pink;
+}
+
+.userto {
+    background-color: rgb(247, 141, 247);
+}
+#messages small{
+    font-size: 2dvh;
+    color: grey;
 }

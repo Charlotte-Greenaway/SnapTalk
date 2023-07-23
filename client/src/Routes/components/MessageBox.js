@@ -12,6 +12,8 @@ const MessageBox = ({userfrom,userto}) => {
     
     const submitMessage = (e) => {
         e.preventDefault();
+        const formToReset = document.getElementById('textbox');
+        formToReset.value= "";
         let date= new Date();
         sendJsonMessage({currentMsg, date, userfrom ,userto });
     }
@@ -21,8 +23,7 @@ const MessageBox = ({userfrom,userto}) => {
           setMsgArr(data.data);
         })
         .catch(error=>console.log(error))
-      }, [userto]);
-
+      }, [userto, userfrom]);
       
       useEffect(() => {
         const interval = setInterval(() => {
@@ -32,13 +33,19 @@ const MessageBox = ({userfrom,userto}) => {
         return () => {
           clearInterval(interval); 
         };
-      },[userto])
+      },[userto,sendMessage, userfrom])
       useEffect(() => {
         if (lastMessage !== null) {
-          //console.log()
-          setMsgArr(JSON.parse(lastMessage.data))
+          let currentArray= messageArray.length;
+          setMsgArr(JSON.parse(lastMessage.data));
+          if(JSON.parse(lastMessage.data).length !== currentArray){
+            document.getElementById("bottomofmessages").scrollIntoView({
+              behavior: 'smooth', 
+              block: 'start' 
+            })
+          }
         }
-      }, [lastMessage]); 
+      }, [lastMessage,messageArray.length]); 
 
     return(
         <div id="messageBox">
@@ -46,11 +53,15 @@ const MessageBox = ({userfrom,userto}) => {
         
         <div id="messages">
             {messageArray.map(item => (
-              <p key={item}>{item[0]}  {item[1]}   {item[2]}</p>
+              <>
+              <small>{item[2]}</small>
+              <div className={(item[2]===localStorage.username)?"userfrom":"userto"} key={item +"1"}><p key={item +"2"} >{item[0]} <br></br> <small>{item[1]}</small></p></div>
+              </>
             ))}
+            <a id="bottomofmessages"/>
         </div>
         <form id="messageInput" onSubmit={submitMessage}>
-            <input type="textarea" onChange={function (event){setMsg(event.target.value)}}></input>
+            <input type="textarea" id="textbox" onChange={function (event){setMsg(event.target.value)}}></input>
             <input type="submit" />
         </form>
         </div>
