@@ -43,3 +43,17 @@
     font-size: 2dvh;
     color: grey;
 }
+
+#textbox{
+    border-radius: 5px;
+    border: none;
+    padding: 2dvh;
+    background-color: #e2eafb;
+    width: 40dvw;
+}
+#messageInput input[type=submit]{
+    border-radius: 5px;
+    border: none;
+    padding: 2dvh;
+    background-color: #ffd6ff;
+}

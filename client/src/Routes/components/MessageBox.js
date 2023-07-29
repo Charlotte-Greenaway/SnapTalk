@@ -63,7 +63,7 @@ const MessageBox = ({userfrom,userto,mobSide}) => {
             <div id="bottomofmessages" />
         </div>
         <form id="messageInput" onSubmit={submitMessage}>
-            <input type="textarea" id="textbox" onChange={function (event){setMsg(event.target.value)}}></input>
+            <input type="textarea" id="textbox" placeholder='Enter message here ...' onChange={function (event){setMsg(event.target.value)}}></input>
             <input type="submit" />
         </form>
         </div>
