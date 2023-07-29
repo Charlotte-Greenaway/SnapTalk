@@ -6,7 +6,9 @@ import ConvoHeader from './ConvoHeader'
 const WS_URL = 'ws://localhost:8080';
 
 
-const SideBar = ({setMessageBox}) => {
+const SideBar = ({setMessageBox,mobSide,setMobSide}) => {
+    const isMobile= (window.innerWidth<801);
+    console.log(isMobile)
     const user = localStorage.username;
     const [coversations,setConversations]=useState(["No conversations"]);
     const [addConversation,setAddConvo]=useState(false);
@@ -60,7 +62,7 @@ const SideBar = ({setMessageBox}) => {
     
     return(
         <>
-        <div id="sidebar">
+        <div id={(mobSide)?"sidebar":"sidebarclosed"}>
             <div id="sidebarheader">
                 <h2>Inbox</h2><button id ="addConvo" onClick={addConvo}>{addButton}</button>
             </div>
@@ -77,7 +79,10 @@ const SideBar = ({setMessageBox}) => {
             </form>
            </div>
             {coversations.map((friend, index) => (
-                <div key={index} onClick={() => setTheMessage(friend)}><ConvoHeader key={index} index = {index} friend={friend} /></div>
+                <div key={index} onClick={() => {
+                  setTheMessage(friend);
+                  setMobSide(false)
+                }}><ConvoHeader key={index} index = {index} friend={friend} /></div>
               ))}
         </div>
         </>

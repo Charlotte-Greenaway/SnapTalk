@@ -1,9 +1,14 @@
 #messageBox{
     flex-grow: 0.5;
-    overflow-y: hidden;
+    overflow: hidden;
     margin-left:3%;
     height: fit-content;
     width: 60dvw;
+}
+@media (max-width: 800px){
+    #messageBox{
+        width: 90dvw;
+    }
 }
 #messageBox h3{
     text-align: center;

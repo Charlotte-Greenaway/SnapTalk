@@ -89,7 +89,7 @@ const Login = ({setLogin}) => {
     return(
         <>
         <div id="loginpage">
-        <img src={logo} style={{width:20+"dvh", justifySelf:"center"}}></img>
+        <img alt="Logo" src={logo} style={{width:80+"dvh", justifySelf:"center"}}></img>
             
             <div className={logorsign==="login"?"login":"loginNone"}>
             <div className="loginselector">

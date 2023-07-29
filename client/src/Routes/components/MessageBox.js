@@ -4,7 +4,7 @@ import axios from 'axios';
 import useWebSocket from 'react-use-websocket';
 const WS_URL = 'ws://localhost:8080';
 
-const MessageBox = ({userfrom,userto}) => {
+const MessageBox = ({userfrom,userto,mobSide}) => {
     const { sendJsonMessage } = useWebSocket(WS_URL+"/sendMessage");
     const {lastMessage, sendMessage } = useWebSocket(WS_URL+"/getHistory");
     const [currentMsg, setMsg] = useState("");
@@ -39,16 +39,18 @@ const MessageBox = ({userfrom,userto}) => {
           let currentArray= messageArray.length;
           setMsgArr(JSON.parse(lastMessage.data));
           if(JSON.parse(lastMessage.data).length !== currentArray){
-            document.getElementById("bottomofmessages").scrollIntoView({
-              behavior: 'smooth', 
-              block: 'start' 
-            })
+            setTimeout(() => {
+              document.getElementById("bottomofmessages").scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }, 500);
           }
         }
       }, [lastMessage,messageArray.length]); 
 
     return(
-        <div id="messageBox">
+        <div id={(mobSide)?"messageBoxClosed":"messageBox"}>
         <h3>{userto}</h3> 
         
         <div id="messages">
@@ -58,7 +60,7 @@ const MessageBox = ({userfrom,userto}) => {
               <div className={(item[2]===localStorage.username)?"userfrom":"userto"} key={item +"1"}><p key={item +"2"} >{item[0]} <br></br> <small>{item[1]}</small></p></div>
               </>
             ))}
-            <a id="bottomofmessages"/>
+            <div id="bottomofmessages" />
         </div>
         <form id="messageInput" onSubmit={submitMessage}>
             <input type="textarea" id="textbox" onChange={function (event){setMsg(event.target.value)}}></input>

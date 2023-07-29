@@ -80,6 +80,40 @@ fieldset {
     height:90dvh;
     text-align: center;
 }
+#sidebarclosed{
+  background-color: #fdf4fd;
+    width:20dvw;
+    height:90dvh;
+    text-align: center;
+}
+@media(max-width: 800px){
+  #sidebar{
+    width:100dvw
+  } 
+  #greetclosed{
+    display:none;
+  }
+  #messageBoxClosed{
+    display:none;
+  }
+  #sidebarclosed{
+    display:none;
+  } 
+  #mobButton{
+    display: block;
+    border: 1px solid #b2c8f8 !important;
+    border-radius: 20px;
+    padding-right:1dvw !important;
+  }
+}
+#mobClosed{
+  display:none !important;
+}
+@media (min-width:800px){
+  #mobButton{
+    display:none !important;
+  }
+}
 #sidebarheader{
   background-color: #bbd0ff;
   top: 0;
