@@ -83,7 +83,7 @@ Technologies used in the project:
 <h2>💖Like my work?</h2>
 
 Please feel free to contact me on charlottegreenaway654@gmail.com or visit my portfolio website at www.charlotte-greenaway.com.
-  
+ <h2>Screenshots:</h2> 
 ![loginPage](https://github.com/Charlotte-Greenaway/SnapTalk/assets/134973389/76e30013-5b6e-455c-bab0-a60f32d25a22)
 ![messageHome](https://github.com/Charlotte-Greenaway/SnapTalk/assets/134973389/1f39dc27-4e63-4ee7-bea3-dc791c720607)
 
