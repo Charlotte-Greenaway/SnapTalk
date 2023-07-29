@@ -70,7 +70,6 @@ Contributions to SnapTalk are welcome! If you have any suggestions or would like
 
 <h2>&#128295; Known Issues</h2>
   * This app is a work in progress - the settings page is yet to be updated and the front end of the actual message box is to be designed.
-  * This is not yet responsive to mobile/tablet
 These issues will be improved upon so please watch my project for any updates
   
 <h2>💻 Built with</h2>
@@ -85,3 +84,6 @@ Technologies used in the project:
 
 Please feel free to contact me on charlottegreenaway654@gmail.com or visit my portfolio website at www.charlotte-greenaway.com.
   
+![loginPage](https://github.com/Charlotte-Greenaway/SnapTalk/assets/134973389/76e30013-5b6e-455c-bab0-a60f32d25a22)
+![messageHome](https://github.com/Charlotte-Greenaway/SnapTalk/assets/134973389/1f39dc27-4e63-4ee7-bea3-dc791c720607)
+
